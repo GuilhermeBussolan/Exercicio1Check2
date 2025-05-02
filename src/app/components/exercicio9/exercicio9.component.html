@@ -1,0 +1,15 @@
+<hr>
+<h2>Exercício 9</h2>
+  
+<ul>
+  @for (produto of produtos; track produto.nome) {
+    <li [class.promocao]="produto.promocao">
+      {{ produto.nome }} - R$ {{ produto.preco }}
+      @if (produto.promocao) {
+        <span class="promo-badge">PROMOÇÃO!</span>
+      }
+    </li>
+  } @empty {
+    <p>Nenhum produto cadastrado</p>
+  }
+</ul>

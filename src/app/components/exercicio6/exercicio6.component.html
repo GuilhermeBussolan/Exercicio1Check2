@@ -1,0 +1,11 @@
+<hr>
+<h2>Exercício 6</h2>
+<p>Lista de Usuários</p>
+
+<ul>
+  @for (usuario of usuarios; track usuario.nome) {
+    <li>Nome: {{ usuario.nome }}, Idade: {{ usuario.idade }}</li>
+  } @empty {
+    <li>Nenhum usuário cadastrado</li>
+  }
+</ul>

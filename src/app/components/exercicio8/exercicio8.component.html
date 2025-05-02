@@ -1,0 +1,25 @@
+<hr>
+<h2>Exercício 8</h2>
+
+<form (ngSubmit)="validarLogin()">
+  <label>Email:</label>
+  <input type="email" [(ngModel)]="email" name="email" />
+
+  <br />
+
+  <label>Senha:</label>
+  <input type="password" [(ngModel)]="senha" name="senha" />
+
+  <br />
+  <button type="submit">Entrar</button>
+</form>
+
+<div *ngIf="enviado">
+  @if (mensagem === 'Campos obrigatórios!') {
+    <p style="color:red">{{ mensagem }}</p>
+  } @else if (mensagem === 'Credenciais inválidas!') {
+    <p style="color:orange">{{ mensagem }}</p>
+  } @else {
+    <p style="color:green">{{ mensagem }}</p>
+  }
+</div>

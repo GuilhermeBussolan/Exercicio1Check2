@@ -1,0 +1,14 @@
+<hr>
+<h2>Exercício 4</h2>
+<p>Lista de Tarefas</p>
+
+<ul>
+  @for (tarefa of tarefas; track $index) {
+    <li>
+      {{ tarefa }} - {{ $index }}
+      <button (click)="deletar($index)">excluir</button>
+    </li>
+  } @empty {
+    <li>Nenhuma tarefa pendente</li>
+  }
+</ul>

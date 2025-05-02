@@ -1,0 +1,12 @@
+<hr>
+<h2>Exercício 3</h2>
+<p>Idade atual: {{ idade }}</p>
+
+<button (click)="diminuir()">Diminuir</button>
+<button (click)="aumentar()">Aumentar</button>
+
+@if (idade >= 18) {
+  <p>Acesso permitido</p>
+} @else {
+  <p>Acesso negado</p>
+}

@@ -1,0 +1,17 @@
+<hr>
+<h2>Exercício 7</h2>
+<p>Valor atual: {{ valor }}</p>
+
+<div>
+  @switch (valor) {
+    @case (1) {
+      <p>Um</p>
+    }
+    @case ('dois') {
+      <p>Dois</p>
+    }
+    @default {
+      <p>Valor não reconhecido</p>
+    }
+  }
+</div>
